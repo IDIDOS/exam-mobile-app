@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171818"
+    tools:context=".SearchPageActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="275dp"
+        android:src="@mipmap/ellipse_bottom_left"
+        android:translationX="-25dp"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="400dp"
+        android:layout_height="453dp"
+        android:src="@mipmap/ellipse_right"
+        android:translationX="140dp"
+        android:translationY="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="328dp"
+        android:layout_height="293dp"
+        android:src="@mipmap/ellipse_top"
+        android:translationX="-104dp"
+        android:translationY="-29dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/headers"
+        ></include>
+    <include
+        android:id="@+id/include1"
+        layout="@layout/nav_action_container"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cityListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scrollbars="none"
+        android:paddingHorizontal="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

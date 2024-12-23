@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/weather_card_bg"
+    android:onClick="onSelectCity"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/cityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minsk"
+        android:textSize="20sp"
+        android:textColor="#FBC27F"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textFontWeight="400"
+        android:fontFamily="IMPACT"
+        />
+</LinearLayout>

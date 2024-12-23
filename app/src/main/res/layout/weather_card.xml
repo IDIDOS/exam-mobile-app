@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="155dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/weather_card_bg"
+    android:onClick="onSelectWeatherCard"
+    >
+
+    <TextView
+        android:id="@+id/weatherDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textSize="18sp"
+        android:textColor="#FBC27F"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textFontWeight="500"
+        android:fontFamily="IMPACT"
+        />
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="8dp" />
+
+    <TextView
+        android:id="@+id/weatherTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15°C"
+        android:textSize="18sp"
+        android:textColor="#FBC27F"
+        android:layout_gravity="center"
+        android:textFontWeight="500"
+        android:fontFamily="IMPACT"
+        />
+</LinearLayout>

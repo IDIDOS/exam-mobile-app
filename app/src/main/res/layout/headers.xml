@@ -1,0 +1,32 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:src="@mipmap/logo_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    android:contentDescription="Icon"
+        />
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TGR WEATHER"
+        android:textColor="#F97038"
+        android:textSize="25dp"
+        android:textFontWeight="500"
+        android:fontFamily="IMPACT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myImageView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

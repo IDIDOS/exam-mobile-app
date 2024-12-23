@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#171818"
+    android:padding="0dp"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/nav_action_container"></include>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="275dp"
+        android:src="@mipmap/ellipse_bottom_left"
+        android:translationX="-25dp"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="400dp"
+        android:layout_height="453dp"
+        android:src="@mipmap/ellipse_right"
+        android:translationX="140dp"
+        android:translationY="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="328dp"
+        android:layout_height="293dp"
+        android:src="@mipmap/ellipse_top"
+        android:translationX="-104dp"
+        android:translationY="-29dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/headers"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:translationY="-150dp"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/weatherImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/search_button_big"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:id="@+id/weatherInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="Загрузка данных..."
+    android:textColor="#FBC27F"
+    android:textSize="20sp"
+    android:fontWeight="500"
+    android:gravity="center"
+        />
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weatherListViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:translationY="-140dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
